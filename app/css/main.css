@@ -20,7 +20,19 @@
 }
 
 .main-content {
-  width: 100%;
-  margin-left: 0;
-  padding: 10px;
+    background: #FFF;
+    -webkit-border-radius: 2px;
+    margin: -5px 1px 0 -19px;
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+
+.body-wrapper {
+  position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 45px;
+    bottom: 0px;
+    background: lavender;
 }

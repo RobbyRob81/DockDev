@@ -6,8 +6,13 @@ window.$ = window.jQuery = require('./node_modules/jquery/dist/jquery.js');
 var fileTree = [];
 
 function getFilesRecursive (folder, search, exclude) {
+    console.log('inside: getFilesfunc');
+    console.log(folder);
+
     var fileContents = fs.readdirSync(folder),
         stats;
+
+        console.log(fileContents);
 
     fileContents.forEach(function (fileName) {
         if (!exclude.hasOwnProperty(fileName)) {

@@ -21,7 +21,8 @@
     <link rel="stylesheet" href="./css/main.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-    <div class="">
+    <!-- head -->
+    <div class="app-head">
       <nav class="uk-navbar window-nav">
         <div class="uk-navbar-flip">
           <ul class="uk-navbar-nav">
@@ -30,7 +31,8 @@
         </div>
       </nav>
     </div>
-    <div class="uk-flex main-body">
+    <!-- body -->
+    <!-- <div class="uk-flex main-body">
         <div class="box main-nav">
           <ul class="uk-list uk-list-space">
             <li>Codesmith</li>
@@ -40,11 +42,15 @@
         </div>
         <div class="uk-grid tm-grid-truncate uk-margin uk-margin-left uk-margin-right uk-margin-bottom" data-uk-grid-margin="5">
           <div class="uk-width-medium-1-1">
+
             <div id="upload-drop" class="uk-placeholder">
-                Info text... <a class="uk-form-file">Select a file<input id="upload-select" type="file"></a>.
+                Info text........
+
+                  usc sandiego  coursera courses on data structures
+                <a class="uk-form-file">Select a file<input id="upload-select" type="file"></a>.
             </div>
               <script>
-                var holder = document.getElementById('upload-drop');
+                var holder = document.getElementById('upload-select');
                 holder.ondragover = function () {
                   return false;
                 };
@@ -54,7 +60,10 @@
                 holder.ondrop = function (e) {
                   e.preventDefault();
                   var file = e.dataTransfer.files[0];
+                  console.log('other:', e.dataTransfer.files);
                   console.log('File you dragged here is', file.path);
+                  console.log(file);
+                  getFilesRecursive (file.path);
                   return false;
                 };
               </script>
@@ -83,6 +92,44 @@
           </div>
         </div>
     </div>
+     -->
+     <div class="body-wrapper">
+        <div class="well" style="float: left; width: 160px; padding: 8px;">
+          <ul class="nav nav-list" id="sidebar">
+            <li class="nav-header">Favorites</li>
+            <li class="active">
+              <a href="#" nw-path="~/"><i class="icon-white icon-home"></i> Home</a>
+            </li>
+            <li>
+              <a href="#" nw-path="~/Documents"><i class="icon-book"></i> Documents</a>
+            </li>
+            <li>
+              <a href="#" nw-path="~/Pictures"><i class="icon-picture"></i> Pictures</a>
+            </li>
+            <li>
+              <a href="#" nw-path="~/Music"><i class="icon-music"></i> Music</a>
+            </li>
+            <li>
+              <a href="#" nw-path="~/Movies"><i class="icon-film"></i> Movies</a>
+            </li>
+            <li class="nav-header">Network</li>
+            <li class="divider"></li>
+            <li><a href="#" nw-call="about" onclick="App.about()"><i class="icon-flag"></i> About</a></li>
+          </ul>
+        </div>
+
+        <div style="float: left; position: absolute; left: 210px; right: 0; top: 0; bottom: 50px; width:100%;">
+
+          <div class="row">
+            <ul id="addressbar" class="breadcrumb"></ul>
+          </div>
+
+          <div class="row" style="background: #FFF; -webkit-border-radius: 2px; margin: -5px 1px 0 -19px; height: 100%; overflow: auto; height:100%;">
+            <ul style="margin: 5px;" id="files"></ul>
+          </div>
+        </div>
+
+      </div>
     <script src="js/file-search.js"></script>
 
     <script src="../bower_components/jquery/dist/jquery.js"></script>
