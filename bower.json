@@ -1,0 +1,34 @@
+{
+  "name": "dockdev",
+  "description": "docker cli",
+  "main": "main.js",
+  "authors": [
+    "Alan",
+    "David",
+    "Rob",
+    "Sam"
+  ],
+  "license": "CC0-1.0",
+  "keywords": [
+    "Docker",
+    "cli",
+    "manager"
+  ],
+  "homepage": "https://github.com/RobbyRob81/DockDev",
+  "moduleType": [
+    "es6",
+    "globals",
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "uikit": "^2.25.0",
+    "photon": "^0.1.2-alpha"
+  }
+}

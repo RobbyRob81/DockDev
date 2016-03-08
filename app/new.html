@@ -34,34 +34,23 @@
         <div class="pane-group">
           <div class="pane-sm sidebar">
             <ul class="list-group">
-              <!-- <li class="list-group-header">
-                <input class="form-control" type="text" placeholder="Search for someone">
-              </li> -->
-              <li class="list-group-item">
-                <img class="img-circle media-object pull-left" src="../bower_components/photon/docs/assets/img/avatar.jpg" width="32" height="32">
-                <div class="media-body">
-                  <strong>Image #1</strong>
-                  <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-              </li>
               <li class="list-group-item">
                 <img class="img-circle media-object pull-left" src="../bower_components/photon/docs/assets/img/avatar2.png" width="32" height="32">
-                <a href="new.html">
+                <a href="index.html">
                     <div class="media-body">
-                      <strong>Docker Container</strong>
-                      <p>Mongo - SQL</p>
+                      <strong>Test Page for DD</strong>
+                      <p>Sample detail page goes here</p>
                     </div>
                 </a>
 
               </li>
             </ul>
-            <!-- bottom nav buttons | settings -->
             <div class="btn-group side-nav">
                 <!-- <span class="logo">
                   <img src="./images/dockdev1.png" alt="" />
                 </span> -->
-              <button class="btn btßn-default bottom-nav" id="settings">
-                <span class="icon icon-cog"></span>
+              <button class="btn btn-default" id="settings">
+                <span class="icon icon-cog" ></span>
               </button>
               <button class="active btn btn-default">
                 <span class="icon icon-shuffle"></span>
@@ -69,16 +58,33 @@
             </div>
           </div>
           <div class="pane">
-           <div class="uk-grid">
+            <div class="tab-group">
+              <div class="tab-item">
+                <span class="icon icon-cancel icon-close-tab"></span>
+                Tab
+              </div>
+              <div class="tab-item active">
+                <span class="icon icon-cancel icon-close-tab"></span>
+                Tab active
+              </div>
+              <div class="tab-item">
+                <span class="icon icon-cancel icon-close-tab"></span>
+                Tab
+              </div>
+              <div class="tab-item tab-item-fixed">
+                <span class="icon icon-plus"></span>
+              </div>
+            </div>
+           <!-- <div class="uk-grid"> -->
             <div class="uk-width-1-1">
               <dl class="uk-description-list-horizontal">
-                  <dt>Description lists</dt>
-                  <dd>A description list defines terms and their corresponding descriptions.</dd>
-                  <dt>Lorem ipsum</dt>
-                  <dd>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</dd>
-                  <dt>A long term is truncated</dt>
-                  <dd>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</dd>
-              </dl>
+                                <dt>Description lists</dt>
+                                <dd>A description list defines terms and their corresponding descriptions.</dd>
+                                <dt>Lorem ipsum</dt>
+                                <dd>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</dd>
+                                <dt>A long term is truncated</dt>
+                                <dd>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</dd>
+                            </dl>
               <dl class="uk-description-list-horizontal">
                   <dt>Title Goes Here</dt>
                   <dd>
@@ -93,23 +99,20 @@
     </div>
 
       </div>
-      <!-- <script>
-        require('./js/main.js');
-      </script> -->
       <script src="../bower_components/jquery/dist/jquery.js"></script>
+      <script src="js/main.js"></script>
     <script src="js/file-search.js"></script>
-    <!-- <script src="js/main.js"></script> -->
-     <script> require('./js/main.js') </script>
-     <script>
-     const ipcRenderer = require('electron').ipcRenderer;
+    <script>
+    const ipcRenderer = require('electron').ipcRenderer;
 
-    //  $('#settings').on('click', function(){
-    //    console.log('setting-btn clicked');
-    //  });
+    $('#settings').on('click', function(){
+      console.log('setting-btn clicked');
+    });
 
-     </script>
+    </script>
     <script src="../bower_components/photon/dist/template-app/app.js"></script>
     <script src="../bower_components/photon/dist/template-app/js/menu.js"></script>
+
 
     <script src="../bower_components/uikit/js/uikit.js"></script>
     <script src="../bower_components/uikit/js/components/upload.js"></script>

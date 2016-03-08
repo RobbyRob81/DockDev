@@ -36,3 +36,28 @@
     bottom: 0px;
     background: lavender;
 }
+
+.btn-group.side-nav {
+    border-top: 1px solid #DDDDDD;
+    position: absolute;
+    bottom: 0;
+    max-width: 175px;;
+        width: 100%;
+    padding: 6px;
+}
+
+.side-nav .btn {
+  background: none;
+    height: 36px;
+    border: 0;
+    width: 36px;
+    box-shadow: none;
+}
+
+.sidebar {
+  background-color: white;
+}
+
+.pane {
+      padding: 20px;
+}
