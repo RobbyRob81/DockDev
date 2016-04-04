@@ -1,6 +1,7 @@
 html,
 body {
   background: #FFF;
+  height: 100vh;
 }
 
 html {
@@ -29,6 +30,11 @@ h1 {
   }
 }
 
+#app {
+  overflow: hidden;
+    overflow-y: scroll;
+}
+
 #header{
   border-bottom: 1px solid #19191B;
     position: fixed;
@@ -54,6 +60,7 @@ h1 {
   margin-bottom: 0;
   padding-left: 10px;
   /*border-right: 1px solid #DADADA;*/
+  z-index: 6;
 }
 
 .search-wrapper {
@@ -92,16 +99,32 @@ h1 {
     right: -140px;
 }
 
+.card-block {
+
+}
+
 #projectMenu {
   margin-left: -10px;
   /*border: 1px dashed grey;*/
-  padding-left: 25px;
+  /*padding-left: 25px;*/
   margin-top: -15px;
   color: white!important;
 }
 
+#projectMenu li {
+  border-left: 2px solid #71A0D7;
+}
+
 #projectMenu a {
   color: white;
+  /*border: 1px solid;*/
+  width: 100%;
+  padding-left: 25px;
+}
+
+li.nav-item {
+    padding: 6px;
+    /*border-left: border: 2px dashed #71A0D7;*/
 }
 
 .btn-primary-outline:hover {
@@ -135,17 +158,22 @@ ul.nav li {
     top: 12px;
 }
 
-/*.container-player-btns {
-    top: -45px;
-    right: 73px;
+.container-player-btns {
+    /*top: -45px;*/
+    /*right: 73px;*/
     /* width: 100%; */
-    float: right;
-    text-align: right;
-}*/
+    /*float: right;*/
+    /*text-align: right;*/
+}
 
 .container-player-btns label {
     border: 1px dashed;
-    padding: 2px 5px!important;
+    padding: 0px 0px 0px 7px!important;
+}
+
+.container-player-btns label input {
+  width: 32px;
+  height: 32px;
 }
 
 .container-player-btns label.btn.btn-primary:focus {
@@ -180,7 +208,7 @@ ul.nav li {
 }
 
 #servers, #databases {
-  min-height: 50px;
+  min-height: 280px;
 }
 
 .top-nav-btn-group{
@@ -190,7 +218,7 @@ ul.nav li {
 }
 
 .top-nav-btn-group .btn {
-  padding: 2px 16px 0 16px!important;
+  padding: 4px 16px 0 16px!important;
 }
 
 .top-nav-btn-group .btn img {
@@ -230,17 +258,45 @@ ul.nav li {
   top: -38px;
   /*border: 1px dashed red;*/
   color: grey;
+  display: none;
+}
+
+.projDetail-misc-nav{
+  border: 1px dashed;
+    width: auto;
+    background: aliceblue;
+    /* list-style: inherit; */
+    top: 116px;
+    right: 0;
 }
 
 .proj-nav .nav {
-    position: relative;
-    /*border: 1px dashed;*/
+    position: absolute;
+    /* border: 1px dashed; */
     /* right: 26px; */
-    text-align: right;
-    /*background: #6363E5;*/
+    text-align: left;
+    /* background: #6363E5; */
     padding: 10px;
-    margin: -10px;
-    height: 50px;
+    /* margin: -10px; */
+    height: 40px;
+        border: 1px dashed;
+    width: 92px;
+    background: aliceblue;
+    /* list-style: inherit; */
+    top: 64px;
+    right: 0;
+    z-index: 3;
+}
+
+button.btn.btn-sm.btn-primary-outline.container-save {
+    position: relative;
+    top: -32px;
+    right: -83px;
+}
+
+.proj-nav {
+  border: 1px dashed;
+    width: 170px;
 }
 
 .add-proj-icon {
@@ -286,7 +342,10 @@ ul.nav li {
 
 #content {
   width: 100%;
-  padding:10px;
+  margin: 0 auto;
+  overflow: auto;
+  padding:25px;
+  padding-top: 65px;
 }
 
 .proj-nav ul li {
@@ -345,7 +404,7 @@ ul.nav li {
 }
 
 .active {
-  color: green;
+  color: white;
 }
 
 
@@ -366,6 +425,11 @@ ul.nav li {
   padding: 10px 9px 10px 9px;
   text-align: right;
   height: 50px;
+  position: fixed;
+    z-index: 5;
+    width: 100%;
+    background: white;
+    margin-left: -189px;
 }
 
 .content-top-nav button {

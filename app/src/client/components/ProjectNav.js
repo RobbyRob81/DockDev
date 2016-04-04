@@ -36,7 +36,7 @@ const ProjectNav = (props) => {
               <img src="./client/images/png/arrows@2x.png" onClick={remove}></img>
           </label>
         </div>
-        <ul className="nav nav-inline">
+        <ul className="nav nav-inline projDetail-misc-nav">
             <li className="nav-item">
               <Link className="nav-link" to={`/projects/${uuid}`}>
                 H
