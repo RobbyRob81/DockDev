@@ -505,3 +505,7 @@ ul, li {
 .padding-left-none {
   padding-left: 0!important;
 }
+
+.activeProj {
+  background-color: Green;
+}
