@@ -7,7 +7,7 @@
     "start": "electron app/build/main.js",
     "gulp": "gulp",
     "test": "mocha \"./test/tests-compiled.js\"",
-    "build:mac": "electron . DockDev --platform=darwin --arch=x64 --version=0.36.0"
+    "build:mac": "electron-packager . DockDev --platform=darwin --arch=x64 --version=0.36.0"
   },
   "devDependencies": {
     "babel-cli": "^6.6.5",

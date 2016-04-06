@@ -17,7 +17,7 @@ function handleErrors() {
  this.emit('end');
 }
 
-gulp.task('default', ['server', 'react', 'test', 'main', 'client-other', 'html', 'bower', 'watch']);
+gulp.task('default', ['server', 'react', 'test', 'main', 'client-other', 'html', 'svgs', 'bower', 'watch']);
 
 gulp.task('server', () => {
   return gulp.src('./app/src/server/*')
@@ -89,6 +89,11 @@ gulp.task('client-other', () => {
 gulp.task('images', () => {
   return gulp.src('./app/src/client/images/*')
     .pipe(gulp.dest('./app/build/client/images'))
+})
+
+gulp.task('svgs', () => {
+  return gulp.src('./app/src/client/images/svg/*')
+    .pipe(gulp.dest('./app/build/client/images/svg'))
 })
 
 gulp.task('html', () => {

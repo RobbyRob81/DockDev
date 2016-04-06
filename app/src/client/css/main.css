@@ -69,12 +69,12 @@ h1 {
   border: none;
 }
 
-.add-proj-icon {
+/*.add-proj-icon {
     padding: 0;
     margin: 0;
     top: -7px;
-    /*position: absolute;*/
-}
+    position: absolute;
+}*/
 
 .proj-anchor {
   height: 50px;
@@ -83,13 +83,15 @@ h1 {
 }
 
 .add-proj-wrapper {
-    position: relative;
-    top: -33px;
-    /*border: 1px dashed black;*/
-    width: 16px;
-    height: 16px;
-    padding: 0;
-    right: -140px;
+    width: 100%;
+    /* background: rgba(0, 0, 0, 0.41); */
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    padding: 0!important;
+    top: 59px;
+    left: 135px;
+    fill:white;
 }
 
 #projectMenu {
@@ -244,8 +246,12 @@ ul.nav li {
 }
 
 .add-proj-icon {
-    width: 28px;
+    width: 28px; */
     height: 28px;
+    /* border: 1px dashed; */
+    /* height: auto; */
+    /* max-height: none; */
+    display: list-item;
 }
 
 .add-proj-icon img {
@@ -444,4 +450,17 @@ ul, li {
 
 .activeProj {
   background-color: Green;
+}
+
+
+.power-active {
+  fill: #0FD20F;
+}
+
+.power-inactive {
+  fill: #E22424;
+}
+
+.content-top-nav svg {
+    fill: grey;
 }
