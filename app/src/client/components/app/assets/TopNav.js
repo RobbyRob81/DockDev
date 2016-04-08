@@ -7,7 +7,7 @@ const TopNav = ({ activeProject }) => {
   let image = '';
   if (activeProject) {
     pathTo = `/projects/${activeProject}`;
-    styling = { backgroundColor: 'lightGreen' };
+    styling = { backgroundColor: 'lavender' };
     image = './client/images/png/power@2x.png';
   } else {
     pathTo = '/';
@@ -36,6 +36,16 @@ const TopNav = ({ activeProject }) => {
          <input type="radio" name="options" id="option3" autoComplete="off" />
          <Link className="nav-link" to={'/settings'}>
            <img src="./client/images/png/tool@2x.png"></img>
+           <svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <path d="M50,50
+             A30,30 0 0,1 35,20
+             L100,100
+             M110,110
+             L100,0"
+          style="stroke:#660000; fill:none;"/>
+</svg>
          </Link>
        </label>
 
