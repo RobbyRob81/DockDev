@@ -27,20 +27,14 @@ const ProjectDetail = ({ projects, params, delContainer }) => {
     );
   return (
     <div className="project-wrapper">
-        <div className="row">
-          <div className="col-xs-12" id="servers">
-            <h5>Servers</h5>
-            <div className="divider"></div>
-          </div>
-          {server}
-        </div>
-        <div className="row" >
-          <div className="col-xs-12" id="databases">
-            <h5>Databases</h5>
-            <div className="divider"></div>
-            {dbs}
-          </div>
-        </div>
+      <div className="col-xs-12" id="servers">
+        <h5 className="section-title" >Servers</h5>
+      </div>
+      {server}
+      <div className="col-xs-12" id="databases">
+        <h5 className="section-title" >Databases</h5>
+      </div>
+      {dbs}
     </div>
   );
 };

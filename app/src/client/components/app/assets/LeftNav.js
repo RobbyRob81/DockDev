@@ -4,12 +4,6 @@ import NavLink from './NavLink';
 
 const LeftNav = ({ projects, exampleClick }) => (
   <ul role="nav" id="menu" className="nav">
-    <li className="search-wrapper">
-      {/* <input className="main-search-input"></input>*/}
-        {/* <span className="input-group-addon">
-          <img src="./client/images/png/search.png"></img>
-        </span>*/}
-    </li>
     <li className="nav-item proj-anchor">
       <NavLink to="/" onlyActiveOnIndex>
         <label onClick={exampleClick}>
@@ -19,7 +13,7 @@ const LeftNav = ({ projects, exampleClick }) => (
     </li>
     <li className="add-proj-wrapper">
       <NavLink to="/addProject" className="add-proj-icon">
-        <img src="./client/images/png/addIcon@2x.png"></img>
+        <img src="./client/images/png/Add-01.png"></img>
       </NavLink>
     </li>
     <ProjectLinks projects={projects} />

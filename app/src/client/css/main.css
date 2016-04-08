@@ -1,6 +1,6 @@
 html,
 body {
-  background: #FFF;
+  background: #f8f8f9!important;
   height: 100vh;
 }
 
@@ -56,7 +56,8 @@ h1 {
   top: 0;
   bottom: 0;
   width: 200px;
-  background: rgb(113, 160,215);  color: white;
+  background: #223142;
+  color: white;
   margin-bottom: 0;
   padding-left: 10px;
   /*border-right: 1px solid #DADADA;*/
@@ -91,12 +92,12 @@ h1 {
 
 .add-proj-wrapper {
     position: relative;
-    top: -33px;
+    top: -42px;
     /*border: 1px dashed black;*/
-    width: 16px;
-    height: 16px;
+    width: 40px;
+    height: 40px;
     padding: 0;
-    right: -140px;
+    right: -135px;
 }
 
 .card-block {
@@ -112,7 +113,7 @@ h1 {
 }
 
 #projectMenu li {
-  border-left: 2px solid #71A0D7;
+  /*border-left: 2px solid #71A0D7;*/
 }
 
 #projectMenu a {
@@ -146,22 +147,22 @@ li.nav-item {
 }
 
 ul.nav li {
-    padding: 6px;
+    padding: 4px;
     /*border: 1px dashed;*/
 }
 
 .project-wrapper {
   position: relative;
-    /* top: -25px; */
-    /*border: 1px dashed;*/
-    /* z-index: 0; */
-    top: 12px;
+  /* top: -25px; */
+  /*border: 1px dashed;*/
+  /* z-index: 0; */
+  top: 12px;
 }
 
 .container-player-btns {
     /*top: -45px;*/
     /*right: 73px;*/
-    /* width: 100%; */
+     width: 100%;
     /*float: right;*/
     /*text-align: right;*/
 }
@@ -172,14 +173,17 @@ ul.nav li {
 }
 
 .container-player-btns label input {
-  width: 32px;
-  height: 32px;
+  left: 5px;
 }
 
 .container-player-btns label.btn.btn-primary:focus {
     background: none;
     color: grey;
     border: none;
+}
+
+.container-player-btns label img {
+  width: 100%;
 }
 
 .container-player-btns label.btn.btn-primary:hover {
@@ -208,7 +212,9 @@ ul.nav li {
 }
 
 #servers, #databases {
-  min-height: 280px;
+  /*min-height: 280px;*/
+  margin-bottom: 25px;
+  margin-top: 10px;
 }
 
 .top-nav-btn-group{
@@ -218,7 +224,13 @@ ul.nav li {
 }
 
 .top-nav-btn-group .btn {
-  padding: 4px 16px 0 16px!important;
+  /*padding: 4px 16px 0 16px!important;*/
+  padding: 0;
+    height: 45px;
+    margin-left: 5px!important;
+    width: 45px;
+    opacity: 0.3;
+    padding-top: 5px;
 }
 
 .top-nav-btn-group .btn img {
@@ -226,15 +238,27 @@ ul.nav li {
 }
 
 .top-nav-btn-group label {
-    background: none;
+        background: none;
     color: grey;
-    border: none;
+    /* border: none; */
+    width: 58px;
+    text-align: center;
 }
 
 .container-player-btns label{
    background: none;
     color: grey;
     border: none;
+    padding: 0;
+    height: 55px;
+    width: 58px;
+    margin: 0;
+}
+
+.container-player-btns input {
+    width: 100%;
+    height: 100%;
+    margin-left: -6px;
 }
 
 .container-player-btns label.btn.btn-primary.active{
@@ -243,9 +267,12 @@ ul.nav li {
     border: none;
 }
 
+.section-title {
+  font-weight: 400;
+}
 
 .project-wrapper h5 {
-  font-size: 20px;
+  /*font-size: 20px;*/
 }
 
 .proj-nav .nav li a {
@@ -296,20 +323,25 @@ button.btn.btn-sm.btn-primary-outline.container-save {
 
 .proj-nav {
   border: 1px dashed;
-    width: 170px;
+  width: 234px;
+  /*display: none;*/
+  top:350px;
+  z-index: 2;
+  left: 16px;
+  position: relative;
 }
 
 .add-proj-icon {
-    width: 28px;
-    height: 28px;
+  width: 28px;
+  height: 28px;
 }
 
 .add-proj-icon img {
   width: 100%;
   /*border: 1px dashed;*/
-  margin-top: -23px;
-    width: 18px;
-    margin-left: -8px;
+  /*margin-top: -23px;*/
+  /*width: 18px;*/
+  /*margin-left: -8px;*/
 }
 
 #menu > div {
@@ -318,6 +350,15 @@ button.btn.btn-sm.btn-primary-outline.container-save {
   /*padding: 15px;*/
   /*border-bottom: 1px solid #DADADA;*/
   /*text-align: center;*/
+}
+
+.card-block {
+   border-color: #F1F1F3!important;
+}
+
+.card {
+  width: 177pt!important;
+  height: 220pt!important;
 }
 
 #menu > #bottomNav {
@@ -329,10 +370,10 @@ button.btn.btn-sm.btn-primary-outline.container-save {
 
 #menu label {
   margin: 0;
-  font-weight: bold;
-  font-size: 15px;
+  font-weight: 400;
+  font-size: 17px;
   /*background: black;*/
-  margin-top: 6px;
+  margin-top: 9px;
   color: white!important;
 }
 
@@ -424,12 +465,12 @@ button.btn.btn-sm.btn-primary-outline.container-save {
   border-bottom: 1px solid #F1F1F3;
   padding: 10px 9px 10px 9px;
   text-align: right;
-  height: 50px;
+  height: 55px;
   position: fixed;
-    z-index: 5;
-    width: 100%;
-    background: white;
-    margin-left: -189px;
+  z-index: 5;
+  width: 100%;
+  background: white;
+  /*margin-left: -189px;*/
 }
 
 .content-top-nav button {
@@ -474,8 +515,8 @@ ul, li {
 }
 
 .divider {
-  border-bottom: 1px solid #DCD9D9;
-  margin-bottom: 35px;
+  /*border-bottom: 1px solid #DCD9D9;*/
+  /*margin-bottom: 35px;*/
 }
 
 .text-container {
@@ -498,7 +539,7 @@ ul, li {
 }
 
 #databases {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 
