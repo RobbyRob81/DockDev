@@ -16,13 +16,9 @@ const ProjectNav = (props) => {
       <div className="proj-nav">
         <div className="col-xs-4 proj-detail-title" style={{ padding: '0px' }}>
           <h5 className="text-capitalize">
-            {proj.projectName}
+            {/*{proj.projectName}*/}
           </h5>
         </div>
-
-        <ProjButtons start={start} stop={stop} restart={restart} remove={remove} />
-        <ProjNavLinks uuid={uuid} />
-
       </div>
       {React.cloneElement(props.children, props)}
     </div>
@@ -43,6 +39,9 @@ ProjectNav.propTypes = {
   removeProject: React.PropTypes.func,
   deployProject: React.PropTypes.func,
 };
+
+
+{/*<ProjButtons start={start} stop={stop} restart={restart} remove={remove} />*/}
 
 
 // projects,

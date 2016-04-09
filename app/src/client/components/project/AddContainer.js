@@ -1,6 +1,8 @@
 import React from 'react';
 import { containerMgmt, availableImages } from './server/main';
 import DockerImage from './assets/DockerImage';
+import { logo } from '../../../server/appLevel/availableImages.js';
+
 
 class AddContainer extends React.Component {
   constructor() {
@@ -66,14 +68,15 @@ class AddContainer extends React.Component {
     const serverDisplay = this.state.servers.map((val, idx) => {
       const style = {};
       if (val.name === this.state.selServer) {
-        style.color = 'white';
-        style.backgroundColor = '#286090';
+        style.color = '';
+        style.backgroundColor = '';
         style.borderRadius = '6px';
         style.borderColor = '#286090';
       }
       return (
         <DockerImage key={idx} style={style} className="col-xs-6"
           name={val.name} handler={this.clickServer(val.name)}
+          logo={logo[val.name]}
         />
       );
     });
@@ -90,6 +93,7 @@ class AddContainer extends React.Component {
       return (
         <DockerImage key={idx} style={style}
           name={val.name} handler={this.clickDb(val.name)}
+          logo={logo[val.name]}
         />
       );
     });
@@ -106,14 +110,12 @@ class AddContainer extends React.Component {
             <button className="btn btn-sm btn-primary-outline container-save" onClick={this.submit}>
               Save
             </button>
-            <div className="divider"></div>
-            {serverDisplay}
           </div>
+          {serverDisplay}
           <div className="col-xs-12" id="databases">
             <h5>Databases</h5>
-            <div className="divider"></div>
-            {dbDisplay}
           </div>
+          {dbDisplay}
       </div>
     );
   }

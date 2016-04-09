@@ -231,6 +231,7 @@ class App extends React.Component {
                   updateToken: this.updateToken,
                   DOToken: this.state.DOToken,
                   errorCallback: this.errorCallback,
+                  logo: this.logo,
                 }
               )}
             </div>

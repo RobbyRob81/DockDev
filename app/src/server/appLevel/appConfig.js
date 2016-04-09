@@ -181,7 +181,8 @@ export const removeProjFromConfig = co(function *g(projObj, defaultConfig) {
  */
 export const initApp = co(function *g(defaultConfig, router, addConfig, addProject) {
   try {
-    yield checkDockerMachineInstalled();
+    // yield checkDockerMachineInstalled();
+    // yield tesl;kajsdfjl;
   } catch (e) {
     router.replace('/init/1');
     return false;

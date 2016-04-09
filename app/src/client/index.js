@@ -14,17 +14,21 @@ import Settings from './components/app/Settings';
 
 render((
   <Router history={hashHistory}>
+
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
       <Route path="/addProject" component={AddProject} />
-      <Route path="/init/:id" component={Init} />
       <Route path="/settings" component={Settings} />
+
       <Route path="/projects/:uuid" component={ProjectNav} >
         <IndexRoute component={ProjectDetails} />
         <Route path="/projects/:uuid/settings" component={ProjectSettings} />
         <Route path="/projects/:uuid/deploy" component={ProjectDeploy} />
         <Route path="/projects/:uuid/container" component={AddContainer} />
       </Route>
+
     </Route>
+
+    <Route path="/init/:id" component={Init} />
   </Router>
 ), document.getElementById('app'));
