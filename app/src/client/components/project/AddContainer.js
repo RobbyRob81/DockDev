@@ -2,6 +2,7 @@ import React from 'react';
 import { containerMgmt, availableImages } from './server/main';
 import DockerImage from './assets/DockerImage';
 import { logo } from '../../../server/appLevel/availableImages.js';
+import { Link } from 'react-router';
 
 
 class AddContainer extends React.Component {
@@ -105,7 +106,7 @@ class AddContainer extends React.Component {
               Add Container
             </h5>
           </div>
-          <div className="col-xs-12" >
+          <div className="col-xs-12">
             <h5>Servers</h5>
             <button className="btn btn-sm btn-primary-outline container-save" onClick={this.submit}>
               Save

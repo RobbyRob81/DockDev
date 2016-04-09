@@ -801,3 +801,9 @@ main div {
 .detail-body {
   padding: 15px;
 }
+
+.card-header .btn-group {
+  position: absolute;
+  right: 4px;
+  top: 3px;
+}

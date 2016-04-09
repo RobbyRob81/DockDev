@@ -3,14 +3,9 @@ import { Link } from 'react-router';
 
 const projNavLinks = ({ uuid }) => (
   <div className="card-block">
-      <a className="card-link" >
-        <Link className="nav-link" to={`/projects/${uuid}`}>Home</Link>
-      </a>
-
-    <a className="card-link" to={`/projects/${uuid}/container`}>Add</a>
-    <a className="card-link" to={`/projects/${uuid}/deploy`}>Deploy</a>
-
-
+      <Link className="nav-link" to={`/projects/${uuid}`}>H</Link>
+      <Link className="nav-link" to={`/projects/${uuid}/container`}>+</Link>
+      <Link className="nav-link" to={`/projects/${uuid}/deploy`}>Deploy</Link>
   </div>
 );
 

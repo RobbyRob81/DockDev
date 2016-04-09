@@ -10,7 +10,18 @@ const ServerDetailContainer = ({ details, delContainer, uuid, logo }) => {
         <div className="card-deck">
           <div className="card">
             <div className="card-header">
-              Featured
+              Project Server
+              <div className="btn-group">
+                <button type="button" className="btn btn-info-outline dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span className="sr-only">Toggle Dropdown</span>
+                </button>
+                <div className="dropdown-menu">
+                  <a className="dropdown-item" href="#">Add</a>
+                  <a className="dropdown-item" href="#">Deploy</a>
+                  <div className="dropdown-divider"></div>
+                  <a className="dropdown-item" href="#">Delete</a>
+                </div>
+              </div>
             </div>
             <img className="card-img-top" src={logo} alt="Card image cap"/>
             <ul className="list-group list-group-flush">
@@ -19,7 +30,7 @@ const ServerDetailContainer = ({ details, delContainer, uuid, logo }) => {
               </li>
             </ul>
             <div className="card-block">
-              <EditingNavigation/>
+              <EditingNavigation />
             </div>
           </div>
           <div className="card server-configuration">
