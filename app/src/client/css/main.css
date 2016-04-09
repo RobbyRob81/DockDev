@@ -555,7 +555,7 @@ ul, li {
 }
 
 #databases {
-  margin-top: 20px;
+  margin-top: 36px;
 }
 
 
@@ -804,6 +804,46 @@ main div {
 
 .card-header .btn-group {
   position: absolute;
-  right: 4px;
-  top: 3px;
+  right: 0px;
+  top: 0px;
+}
+
+.container-controls {
+  width: 100%;
+}
+
+.container-controls button {
+  width: 33.44%;
+  height: 45px;
+  border-color: #ECECEC;
+  border-radius: 0px!important;
+}
+
+.container-controls button:first-child {
+  border-left: none;
+}
+
+.container-controls button:last-child {
+  border-right: none;
+}
+
+.controler-wrapper {
+  padding: 0;
+}
+
+.controler-wrapper li {
+  padding: 0;
+}
+
+.active-server li{
+  border: none;
+}
+
+.card-header .btn-group button {
+    border-radius: 0px;
+    height: 44px;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-color: #ECECEC;
 }
