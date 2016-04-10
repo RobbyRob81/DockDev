@@ -11,6 +11,7 @@ import ProjectNav from './components/project/ProjectNav';
 import AddContainer from './components/project/AddContainer';
 import Init from './components/app/Init';
 import Settings from './components/app/Settings';
+import Notifications from './components/app/Notifications';
 
 render((
   <Router history={hashHistory}>
@@ -19,6 +20,7 @@ render((
       <IndexRoute component={Home} />
       <Route path="/addProject" component={AddProject} />
       <Route path="/settings" component={Settings} />
+      <Route path="/notifications" component={Notifications} />
 
       <Route path="/projects/:uuid" component={ProjectNav} >
         <IndexRoute component={ProjectDetails} />

@@ -20,7 +20,7 @@ const TopNav = ({ activeProject }) => {
 
        <label className="btn btn-primary active">
          <input type="radio" name="options" id="option1" autoComplete="off" />
-         <Link className="nav-link" to={'/settings'}>
+       <Link className="nav-link" to={'/notifications'}>
            <img src="./client/images/png/sound.png"></img>
          </Link>
        </label>

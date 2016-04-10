@@ -10,7 +10,7 @@ const ServerDetailContainer = ({ details, delContainer, uuid, logo }) => {
         <div className="card-deck">
           <div className="card active-server">
             <div className="card-header">
-              Project Server
+              Server
               <EditingNavigation />
             </div>
             <img className="card-img-top" src={logo} alt="Card image cap"/>

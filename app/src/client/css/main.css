@@ -57,7 +57,8 @@ h1 {
   top: 0;
   bottom: 0;
   width: 200px;
-  background: #223142;
+  /*background: #223142;*/
+  background: #252e33;
   color: white;
   margin-bottom: 0;
   padding-left: 10px;
@@ -476,6 +477,7 @@ button.btn.btn-sm.btn-primary-outline.container-save {
 
 #right-column {
   padding-left: 199px;
+  height: 100vh;
 }
 
 .content-top-nav {
@@ -841,32 +843,12 @@ main div {
 }
 
 .card-header .btn-group button {
-    border-radius: 0px;
-    height: 44px;
-    border-right: none;
-    border-top: none;
-    border-bottom: none;
-    border-color: #ECECEC;
-}
-
-.btn:focus, label:focus {
-    border: none;
-    box-shadow: none;
-    outline: linen;
-}
-
-.btn-primary:focus,.btn:active:focus,.btn.active:focus,
-.btn-primary.focus,.btn-primary:active.focus,.btn-primary.active.focus, {
-  outline: none;
-}
-
-label:focus {
-  outline: none!important;
-}
-
-a:focus, button:focus, btn:focus { outline:none; }
-button:focus, button:active {
-    outline: none;
+  border-radius: 0px;
+  height: 44px;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  border-color: #ECECEC;
 }
 
 a.nav-link {
@@ -875,4 +857,65 @@ a.nav-link {
 
 a.nav-link::first-letter {
   text-transform: capitalize;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+  outline: 0 none;
+}
+
+.btn-primary:active, .btn-primary.active {
+  box-shadow: none;
+}
+
+button:active {
+  outline: none!important;
+}
+
+label.btn.btn-primary.activeProj.active {
+  outline: none;
+}
+
+label.btn.btn-primary.activeProj {
+  background: none;
+  outline: none;
+}
+
+label.btn.btn-primary.active {
+  outline: none!important;
+}
+
+.nav-link:focus, .nav-link:hover {
+  text-decoration: none;
+  outline: none;
+}
+ .full-page {
+  border: 1px dashed;
+  height: auto;
+  overflow: auto;
+  background: white;
+  height: 100vmax;
+  margin: -11px -25px;
+  position: fixed;
+  width: 100vw;
+}
+
+.full-page input, .full-page span {
+    border-color: #00AEEF;
+}
+
+.settings-content {
+    max-width: 500px;
+    border: 1px dashed;
+    width: 80%;
+    transform: translate(-75%, -50%);
+    position: relative;;
+    top: 53%;
+    left: 50%;
+    resize: both;
+    overflow: auto;
+    height: 100%;
+}
+
+a.list-group-item.active, .notification-content list-item {
+    border-radius: 0px;
 }
