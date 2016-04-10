@@ -2,6 +2,7 @@ html,
 body {
   background: #f8f8f9!important;
   height: 100vh;
+  outline:none;
 }
 
 html {
@@ -386,8 +387,8 @@ button.btn.btn-sm.btn-primary-outline.container-save {
 
 #menu label {
   margin: 0;
-  font-weight: 400;
-  font-size: 17px;
+  font-weight: 500;
+  font-size: 20px;
   /*background: black;*/
   margin-top: 9px;
   color: white!important;
@@ -846,4 +847,32 @@ main div {
     border-top: none;
     border-bottom: none;
     border-color: #ECECEC;
+}
+
+.btn:focus, label:focus {
+    border: none;
+    box-shadow: none;
+    outline: linen;
+}
+
+.btn-primary:focus,.btn:active:focus,.btn.active:focus,
+.btn-primary.focus,.btn-primary:active.focus,.btn-primary.active.focus, {
+  outline: none;
+}
+
+label:focus {
+  outline: none!important;
+}
+
+a:focus, button:focus, btn:focus { outline:none; }
+button:focus, button:active {
+    outline: none;
+}
+
+a.nav-link {
+  text-transform: lowercase;
+}
+
+a.nav-link::first-letter {
+  text-transform: capitalize;
 }

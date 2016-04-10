@@ -13,11 +13,9 @@ const projNavLinks = ({ uuid }) => (
         </li>
         <li>
           <Link className="nav-link" to={`/projects/${uuid}/container`}>Add</Link>
-
         </li>
         <li>
           <Link className="nav-link" to={`/projects/${uuid}/deploy`}>Deploy</Link>
-
         </li>
       </ul>
       <div className="dropdown-divider"></div>
