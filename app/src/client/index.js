@@ -18,7 +18,6 @@ render((
 
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
-      <Route path="/addProject" component={AddProject} />
       <Route path="/settings" component={Settings} />
       <Route path="/notifications" component={Notifications} />
 
@@ -28,6 +27,7 @@ render((
         <Route path="/projects/:uuid/deploy" component={ProjectDeploy} />
         <Route path="/projects/:uuid/container" component={AddContainer} />
       </Route>
+      <Route path="/addProject" component={AddProject} />
 
     </Route>
 

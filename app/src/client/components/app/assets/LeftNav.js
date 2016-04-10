@@ -12,7 +12,7 @@ const LeftNav = ({ projects, exampleClick }) => (
       </NavLink>
     </li>
     <li className="add-proj-wrapper">
-      <NavLink to="/addProject" className="add-proj-icon">
+      <NavLink to="/addProject" className="add-proj-icon" onClick={exampleClick}>
         <img src="./client/images/png/Add-01.png"></img>
       </NavLink>
     </li>

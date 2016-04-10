@@ -198,7 +198,7 @@ class App extends React.Component {
   }
 
   exampleClick(e) {
-    console.log(e.target);
+    console.log('EFFECT============',e.target);
   }
 
   errorCallback(errorObj) {
