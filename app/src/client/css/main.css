@@ -94,13 +94,13 @@ h1 {
 
 .add-proj-wrapper {
     position: relative;
-    top: -42px;
+    top: -38px;
     /*border: 1px dashed black;*/
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     padding: 0;
     right: -135px;
-    background: #00AEEF;
+    /*background: #00AEEF;*/
     border-radius: 100%;
 }
 
@@ -125,6 +125,7 @@ h1 {
   /*border: 1px solid;*/
   width: 100%;
   padding-left: 25px;
+  font-weight: 400;
 }
 
 li.nav-item {
@@ -151,7 +152,7 @@ li.nav-item {
 }
 
 ul.nav li {
-    padding: 4px;
+    padding: 2px;
     /*border: 1px dashed;*/
 }
 
@@ -923,6 +924,19 @@ label.btn.btn-primary.active {
     resize: both;
     overflow: auto;
     height: 100%;
+}
+
+.full-page-add-project {
+  max-width: 500px;
+  /*border: 1px dashed;*/
+  width: 80%;
+  transform: translate(-75%, -50%);
+  position: relative;;
+  top: 53%;
+  left: 50%;
+  resize: both;
+  overflow: auto;
+  height: 100%;
 }
 
 a.list-group-item.active, .notification-content list-item {

@@ -15,15 +15,19 @@ const AddProject = ({ addNewProject }) => {
   const submit = () => addNewProject(projectPath, projectName);
 
   return (
-        <div className="centered-content center-block">
-          <h3>Add Project</h3>
+      <div className="full-page">
+        <div className="settings-content">
+          <h3>Create a Docker project</h3>
+          <p>
+            Creating a project is easy, give your Docker project a name, then create a folder.
+          </p>
           <div className="col-xs-12 form-input-spacing">
             <input
               className="form-control form-control-lg border-bottom-input"
               type="text"
-              placeholder="Name"
+              placeholder="Enter Name"
               onChange={projNameHandler}
-            />
+              />
           </div>
           <div className="col-xs-12 form-input-spacing">
             <label className="file width-12">
@@ -40,6 +44,9 @@ const AddProject = ({ addNewProject }) => {
             </button>
           </div>
         </div>
+
+      </div>
+
   );
 };
 

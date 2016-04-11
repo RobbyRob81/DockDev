@@ -87,9 +87,8 @@ class AddContainer extends React.Component {
       const style = {};
       if (this.state.selDbs.indexOf(val.name) > -1) {
         style.color = 'white';
-        style.backgroundColor = '#71A0D7';
         style.borderRadius = '4px';
-        style.borderColor = '#6894C8';
+        style.backgroundColor = '#6894C8';
       }
       return (
         <DockerImage key={idx} style={style}
